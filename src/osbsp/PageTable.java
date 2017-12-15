@@ -1,6 +1,7 @@
 package osbsp;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.LinkedList;
 
 /**
  * PageTable.java
@@ -156,7 +157,14 @@ public class PageTable {
 	 * RANDOM-Algorithmus: Zufällige Auswahl
 	 */
 	private PageTableEntry randomAlgorithm(PageTableEntry newPte) {
-   // ToDo
+		int random = (int) (Math.random() * pteRAMlist.size());
+
+		PageTableEntry pte = pteRAMlist.get(random);
+
+		pteRAMlist.remove(random);
+		pteRAMlist.add(random, newPte);
+
+		return pte;
 	}
 
 	// ----------------------- Hilfsmethode --------------------------------
