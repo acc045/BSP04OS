@@ -160,7 +160,6 @@ public class PageTable {
 		int random = (int) (Math.random() * pteRAMlist.size());
 
 		PageTableEntry pte = pteRAMlist.get(random);
-
 		pteRAMlist.remove(random);
 		pteRAMlist.add(random, newPte);
 

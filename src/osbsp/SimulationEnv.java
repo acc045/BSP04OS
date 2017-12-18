@@ -47,7 +47,7 @@ public class SimulationEnv {
 		os.setMAX_RAM_PAGES_PER_PROCESS(10);
 		
 		// CLOCK oder FIFO oder RANDOM
-		os.setREPLACEMENT_ALGORITHM(OperatingSystem.ImplementedReplacementAlgorithms.CLOCK);
+		os.setREPLACEMENT_ALGORITHM(OperatingSystem.ImplementedReplacementAlgorithms.RANDOM);
 		
 		// Anzahl Operationen innerhalb eines lokalen Adressbereichs
 		os.setDEFAULT_LOCALITY_FACTOR(1);
